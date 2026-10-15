@@ -35,7 +35,10 @@ Before launch, verify the mailbox and delivery using an actual email client. Aut
 
 ## Visual assets
 
-- `assets/logo.svg`: original WLF Agri Parts concept logo inspired by the supplied brand direction; business owner approval still required.
+- `assets/logo-horizontal.png`: business owner's original horizontal logo, used in all headers.
+- `assets/logo-primary.png`: business owner's original primary logo with slogan, used in all footers.
+- `assets/favicon.png`: business owner's original square icon, used for browser tabs and touch bookmarks.
+- These three PNG files are copied byte-for-byte from the supplied `Logolar.rar`; aspect ratios and transparency are preserved. `assets/logo.svg` is the unused earlier concept.
 - `assets/hero-farm.jpg`: generated illustrative farm/tractor image, not a photograph of company equipment or premises.
 - `assets/parts/*.svg`: original illustrative technical product artwork.
 - `assets/tractor.svg`: retained from the previous concept; unused by the current pages.
@@ -48,4 +51,8 @@ All five pages were checked at widths 360, 390, 768, 1024 and 1440px for horizon
 
 ## Remaining business setup
 
-Replace sample products, confirm logo and company copy, and add approved company/contact/legal details. Hosting publication, domain/DNS connection and actual mailbox delivery are separate from a successful local development run.
+Replace sample products, confirm company copy, and add approved company/contact/legal details. Hosting publication, domain/DNS connection and actual mailbox delivery are separate from a successful local development run.
+
+## Logo update on existing cPanel installation
+
+The `downloads/wlf-logo-update.zip` package contains only the five HTML pages, updated stylesheet and the three original logo PNGs, directly at the archive root with an `assets/` folder. Back up the existing files, upload this ZIP **inside the existing site folder** (for example `public_html/yeni/web-main`), and extract in that same directory, replacing matching files. No folder movement is required. This updates the static site's branding; it does not change the parent WordPress installation, DNS or mail settings. After verification, remove the uploaded ZIP from hosting. GitHub is only used to distribute the downloadable package; the site can continue to run entirely on Veridyen.
