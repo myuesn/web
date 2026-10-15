@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Serrated harvester cutter blade — catalogue illustration</title>
+  <defs>
+    <linearGradient id="steel" x1="92" y1="124" x2="368" y2="297" gradientUnits="userSpaceOnUse"><stop stop-color="#f6f7f5"/><stop offset=".28" stop-color="#aab1af"/><stop offset=".48" stop-color="#e3e7e4"/><stop offset=".7" stop-color="#7f8a86"/><stop offset="1" stop-color="#cbd0ca"/></linearGradient>
+    <linearGradient id="edge" x1="180" y1="180" x2="250" y2="318" gradientUnits="userSpaceOnUse"><stop stop-color="#68746e"/><stop offset="1" stop-color="#26332d"/></linearGradient>
+    <linearGradient id="gold" x1="120" y1="150" x2="160" y2="184" gradientUnits="userSpaceOnUse"><stop stop-color="#ffe2a2"/><stop offset="1" stop-color="#a36c16"/></linearGradient>
+    <filter id="shadow" x="-25%" y="-25%" width="160%" height="170%"><feDropShadow dx="3" dy="15" stdDeviation="12" flood-color="#24362a" flood-opacity=".17"/></filter>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="m73 213 287-109 66 51-26 32-40 4-9 29-40 4-9 29-40 3-10 30-40 3-9 29-39 4-10 28-66-50Z" fill="url(#edge)" stroke="#34413b" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="m73 202 287-109 66 51-31 23-36 4-13 30-36 2-13 31-36 2-13 30-36 2-13 30-36 2-13 28-67-49Z" fill="url(#steel)" stroke="#53615a" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="m88 204 269-101 46 36-13 9-270 104Z" fill="#d5dad4" fill-opacity=".45"/>
+    <path d="m124 253 269-105" stroke="#fff" stroke-opacity=".8" stroke-width="2"/>
+    <path d="m145 290 14-28 37-3 12-30 37-2 12-30 37-2 13-30 37-3 12-30 40-3" stroke="#eef1eb" stroke-width="3" stroke-linecap="round"/>
+    <path d="m101 211 49-19 26 20-49 19Z" fill="#8d9790" stroke="#4e5b53"/>
+    <ellipse cx="139" cy="211" rx="15" ry="11" transform="rotate(-21 139 211)" fill="url(#gold)" stroke="#82601e" stroke-width="2"/>
+    <ellipse cx="139" cy="209" rx="7" ry="4.8" transform="rotate(-21 139 209)" fill="#536057" stroke="#ead4a2" stroke-width="1.5"/>
+    <ellipse cx="307" cy="146" rx="15" ry="10" transform="rotate(-21 307 146)" fill="#59665e" stroke="#e5e9e2" stroke-width="3"/>
+    <ellipse cx="307" cy="148" rx="9" ry="5" transform="rotate(-21 307 148)" fill="#293b30"/>
+    <path d="m183 185 88-33m-80 43 88-33m-80 43 88-33" stroke="#63746a" stroke-opacity=".32"/>
+  </g>
+</svg>

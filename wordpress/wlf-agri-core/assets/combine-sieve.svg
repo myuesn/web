@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Adjustable combine harvester cleaning sieve — catalogue illustration</title>
+  <defs>
+    <linearGradient id="frame" x1="91" y1="93" x2="389" y2="322" gradientUnits="userSpaceOnUse"><stop stop-color="#e4e9e3"/><stop offset=".3" stop-color="#8b9890"/><stop offset=".54" stop-color="#c2cbc3"/><stop offset="1" stop-color="#3e5146"/></linearGradient>
+    <linearGradient id="louver" x1="0" y1="0" x2="0" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#e0e5de"/><stop offset=".45" stop-color="#aab6ac"/><stop offset=".5" stop-color="#697b6d"/><stop offset="1" stop-color="#354b3d"/></linearGradient>
+    <linearGradient id="gold" x1="320" y1="260" x2="388" y2="287" gradientUnits="userSpaceOnUse"><stop stop-color="#efd394"/><stop offset="1" stop-color="#af7e26"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="3" dy="17" stdDeviation="12" flood-color="#20382b" flood-opacity=".18"/></filter>
+    <g id="slat"><path d="M0 0H270V13H0Z" fill="url(#louver)" stroke="#667a6a" stroke-width=".8"/><path d="M0 1H270" stroke="#f1f3eb" stroke-width="1.5"/><path d="M45 0v13m90-13v13m90-13v13" stroke="#506953" stroke-opacity=".45"/></g>
+  </defs>
+  <g filter="url(#shadow)">
+    <path d="m72 124 287-47 78 191-287 65Z" fill="#344d3e" stroke="#263c2f" stroke-width="3"/>
+    <path d="m72 112 287-47 78 191-287 65Z" fill="url(#frame)" stroke="#5c7161" stroke-width="3"/>
+    <path d="m94 125 254-42 64 161-254 55Z" fill="#243c2c" stroke="#d9e0d5" stroke-width="2"/>
+    <g transform="matrix(.907 -.164 .313 .77 98 128)">
+      <use href="#slat" y="0"/><use href="#slat" y="18"/><use href="#slat" y="36"/><use href="#slat" y="54"/><use href="#slat" y="72"/><use href="#slat" y="90"/><use href="#slat" y="108"/><use href="#slat" y="126"/><use href="#slat" y="144"/><use href="#slat" y="162"/><use href="#slat" y="180"/><use href="#slat" y="198"/>
+      <path d="M87-5v224m94-224v224" stroke="#bdc9bc" stroke-width="6"/><path d="M88-5v224m94-224v224" stroke="#f0f2e9" stroke-width="1.5"/>
+    </g>
+    <path d="m153 308 271-59" stroke="#e9ede4" stroke-width="3"/>
+    <path d="m80 114 279-47" stroke="#f5f7ef" stroke-width="2"/>
+    <g fill="#293d30" stroke="#e5eadf" stroke-width="1.5"><circle cx="87" cy="123" r="3.5"/><circle cx="353" cy="81" r="3.5"/><circle cx="158" cy="309" r="3.5"/><circle cx="422" cy="254" r="3.5"/></g>
+    <path d="m324 282 59-13 3 12-59 13Z" fill="url(#gold)" stroke="#755d2b"/>
+    <path d="m335 280 37-8m-35 13 24-5" stroke="#85642e" stroke-width="1.5"/>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2,
+  "settings": {
+    "appearanceTools": true,
+    "layout": {"contentSize": "1180px", "wideSize": "1320px"},
+    "color": {"palette": [
+      {"slug": "wlf-green", "name": "WLF Green", "color": "#174d36"},
+      {"slug": "wlf-gold", "name": "WLF Gold", "color": "#f3bb12"},
+      {"slug": "wlf-ink", "name": "Ink", "color": "#202824"},
+      {"slug": "wlf-paper", "name": "Paper", "color": "#f6f5ef"},
+      {"slug": "white", "name": "White", "color": "#ffffff"}
+    ]},
+    "spacing": {"units": ["px", "rem", "%", "vw"]},
+    "typography": {"fluid": true, "fontFamilies": [{"slug": "system", "name": "System Sans", "fontFamily": "Arial, Helvetica, sans-serif"}]}
+  },
+  "styles": {"typography": {"fontFamily": "var:preset|font-family|system"}}
+}

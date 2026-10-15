@@ -1070,3 +1070,20 @@ table.spec-table { width: 100%; border-collapse: collapse; }
 .header .logo img { height: auto; object-fit: contain; }
 .footer-brand .logo { width: 254px; max-width: 100%; padding: 10px 12px; border: 1px solid var(--line); background: white; }
 .footer-brand .logo img { width: 100%; height: auto; object-fit: contain; }
+.language-picker { position: relative; flex-shrink: 0; }
+.language-picker > summary { list-style: none; cursor: pointer; white-space: nowrap; }
+.language-picker > summary::-webkit-details-marker { display: none; }
+.language-options { position: absolute; z-index: 150; right: 0; top: calc(100% + 12px); width: 168px; padding: 6px; background: white; border: 1px solid var(--line); box-shadow: 0 8px 24px #1734251c; }
+.language-options button { display: flex; align-items: center; justify-content: space-between; width: 100%; background: white; border: 0; padding: 12px 10px; color: var(--ink); text-align: left; font-size: 13px; }
+.language-options button span { font-size: 10px; color: var(--muted); }
+.language-options button:hover, .language-options button[aria-pressed="true"] { background: var(--soft-green); color: var(--green); }
+.contact-grid.has-phone { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.whatsapp-button { position: fixed; z-index: 90; bottom: 24px; right: 24px; display: flex; align-items: center; justify-content: center; width: 54px; height: 54px; background: #168b49; color: white; border: 2px solid white; border-radius: 50%; box-shadow: 0 3px 16px #123d2738; animation: whatsapp-pulse 3.5s ease-out infinite; }
+.whatsapp-button svg { width: 34px; height: 34px; }
+.whatsapp-button:hover { background: #106d38; }
+.whatsapp-tooltip { position: absolute; right: calc(100% + 12px); padding: 10px 13px; color: white; background: var(--ink); font-size: 12px; line-height: 1.5; white-space: nowrap; opacity: 0; pointer-events: none; transform: translateX(4px); transition: opacity .2s, transform .2s; }
+.whatsapp-button:hover .whatsapp-tooltip, .whatsapp-button:focus-visible .whatsapp-tooltip { opacity: 1; transform: none; }
+.has-whatsapp .toast { bottom: 95px; }
+@keyframes whatsapp-pulse { 0%,70%,100% { box-shadow: 0 3px 16px #123d2738, 0 0 0 0 #168b4900; } 35% { box-shadow: 0 3px 16px #123d2738, 0 0 0 10px #168b4920; } }
+@media(max-width:720px) { .contact-grid.has-phone { grid-template-columns: 1fr; } .whatsapp-button { bottom: 18px; right: 18px; width: 50px; height: 50px; } .whatsapp-tooltip { white-space: normal; width: 190px; } }
+@media(prefers-reduced-motion:reduce) { .whatsapp-button { animation: none; } .whatsapp-tooltip { transition: none; } }

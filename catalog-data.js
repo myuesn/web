@@ -10,11 +10,13 @@ window.WLF_PRODUCTS = [
     "oem": "RE206909",
     "name": {
       "en": "Hydraulic gear pump",
-      "tr": "Hidrolik dişli pompa"
+      "es": "Bomba hidráulica de engranajes",
+      "ru": "Шестерённый гидравлический насос"
     },
     "description": {
       "en": "A gear-type hydraulic pump example for your sourcing enquiry. Send the reference, connection photos and machine details so the correct part can be reviewed.",
-      "tr": "Tedarik talebiniz için dişli tip hidrolik pompa örneği. Doğru parçanın incelenmesi için referans, bağlantı fotoğrafları ve makine bilgilerini paylaşın."
+      "es": "Ejemplo de bomba hidráulica de engranajes para su solicitud de suministro. Envíe la referencia, fotografías de las conexiones y los datos de la máquina para que podamos identificar la pieza adecuada.",
+      "ru": "Образец шестерённого гидравлического насоса для запроса на поставку. Укажите артикул, приложите фотографии соединений и сведения о машине для подбора подходящей детали."
     },
     "category": "tractor",
     "group": "hydraulic",
@@ -32,31 +34,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part type",
-          "tr": "Parça tipi"
+          "es": "Tipo de pieza",
+          "ru": "Тип детали"
         },
         "value": {
           "en": "Gear-type hydraulic pump",
-          "tr": "Dişli tip hidrolik pompa"
+          "es": "Bomba hidráulica de engranajes",
+          "ru": "Шестерённый гидравлический насос"
         }
       },
       {
         "label": {
           "en": "Illustrative displacement",
-          "tr": "Örnek hacim"
+          "es": "Cilindrada de ejemplo",
+          "ru": "Пример рабочего объёма"
         },
         "value": {
           "en": "22 cc/rev — demonstration only",
-          "tr": "22 cc/dev — yalnızca örnektir"
+          "es": "22 cm³/rev — solo a modo de ejemplo",
+          "ru": "22 см³/об — только для примера"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Port layout + machine serial number",
-          "tr": "Bağlantı düzeni + makine seri numarası"
+          "es": "Disposición de las conexiones + número de serie de la máquina",
+          "ru": "Расположение портов + серийный номер машины"
         }
       }
     ]
@@ -67,11 +75,13 @@ window.WLF_PRODUCTS = [
     "oem": "5164695",
     "name": {
       "en": "Dry clutch disc",
-      "tr": "Kuru tip debriyaj diski"
+      "es": "Disco de embrague en seco",
+      "ru": "Диск сухого сцепления"
     },
     "description": {
       "en": "A clutch-disc sourcing example. Disc diameter, spline count and machine serial number help identify the requested assembly.",
-      "tr": "Debriyaj diski tedarik örneği. Disk çapı, diş sayısı ve makine seri numarası istenen parçanın belirlenmesini kolaylaştırır."
+      "es": "Ejemplo de disco de embrague para una solicitud de suministro. El diámetro del disco, el número de estrías y el número de serie de la máquina ayudan a identificar el conjunto solicitado.",
+      "ru": "Образец диска сцепления для запроса на поставку. Диаметр диска, число шлицев и серийный номер машины помогут определить требуемый узел."
     },
     "category": "tractor",
     "group": "transmission",
@@ -89,31 +99,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Clutch / transmission",
-          "tr": "Debriyaj / şanzıman"
+          "es": "Embrague / transmisión",
+          "ru": "Сцепление / трансмиссия"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Disc diameter + spline count",
-          "tr": "Disk çapı + diş sayısı"
+          "es": "Diámetro del disco + número de estrías",
+          "ru": "Диаметр диска + число шлицев"
         }
       },
       {
         "label": {
           "en": "Quote scope",
-          "tr": "Teklif kapsamı"
+          "es": "Alcance de la cotización",
+          "ru": "Состав предложения"
         },
         "value": {
           "en": "Disc or complete assembly — specify in enquiry",
-          "tr": "Disk veya komple set — talepte belirtin"
+          "es": "Disco o conjunto completo — indíquelo en la solicitud",
+          "ru": "Диск или узел в сборе — укажите в запросе"
         }
       }
     ]
@@ -124,11 +140,13 @@ window.WLF_PRODUCTS = [
     "oem": "0445110250",
     "name": {
       "en": "Common rail injector",
-      "tr": "Common rail enjektör"
+      "es": "Inyector common rail",
+      "ru": "Форсунка Common Rail"
     },
     "description": {
       "en": "An injector example for quotation enquiries. Please include the stamped injector number and engine details for an identification review.",
-      "tr": "Teklif talepleri için enjektör örneği. Tanımlama incelemesi için enjektör üzerindeki numarayı ve motor bilgilerini ekleyin."
+      "es": "Ejemplo de inyector para solicitudes de cotización. Incluya el número grabado en el inyector y los datos del motor para su identificación.",
+      "ru": "Образец форсунки для запроса коммерческого предложения. Для идентификации укажите номер, нанесённый на форсунку, и данные двигателя."
     },
     "category": "tractor",
     "group": "engine",
@@ -146,31 +164,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Fuel injection",
-          "tr": "Yakıt enjeksiyonu"
+          "es": "Inyección de combustible",
+          "ru": "Впрыск топлива"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Stamped injector number + engine code",
-          "tr": "Enjektör üzerindeki numara + motor kodu"
+          "es": "Número grabado en el inyector + código del motor",
+          "ru": "Номер на форсунке + код двигателя"
         }
       },
       {
         "label": {
           "en": "Enquiry detail",
-          "tr": "Talep detayı"
+          "es": "Detalle de la solicitud",
+          "ru": "Сведения для запроса"
         },
         "value": {
           "en": "New or replacement requirement",
-          "tr": "Yeni parça veya değişim ihtiyacı"
+          "es": "Indique si se trata de una instalación nueva o una sustitución",
+          "ru": "Укажите, требуется ли деталь для новой установки или для замены"
         }
       }
     ]
@@ -181,11 +205,13 @@ window.WLF_PRODUCTS = [
     "oem": "83979825",
     "name": {
       "en": "Front axle bearing kit",
-      "tr": "Ön aks rulman seti"
+      "es": "Kit de rodamientos del eje delantero",
+      "ru": "Комплект подшипников переднего моста"
     },
     "description": {
       "en": "An axle-bearing kit example. Bearing markings and axle identification are needed to assess a matching quotation.",
-      "tr": "Aks rulman seti örneği. Uygun teklifin değerlendirilmesi için rulman üzerindeki kodlar ve aks bilgileri gereklidir."
+      "es": "Ejemplo de kit de rodamientos de eje. Las referencias de los rodamientos y la identificación del eje son necesarias para evaluar la cotización de un kit adecuado.",
+      "ru": "Образец комплекта подшипников моста. Для подготовки предложения по подходящему комплекту необходимы маркировка подшипников и идентификационные данные моста."
     },
     "category": "tractor",
     "group": "axle",
@@ -203,31 +229,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Front axle / wheel hub",
-          "tr": "Ön aks / tekerlek göbeği"
+          "es": "Eje delantero / cubo de rueda",
+          "ru": "Передний мост / ступица колеса"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Bearing marking + axle model",
-          "tr": "Rulman kodu + aks modeli"
+          "es": "Referencia del rodamiento + modelo del eje",
+          "ru": "Маркировка подшипника + модель моста"
         }
       },
       {
         "label": {
           "en": "Quote scope",
-          "tr": "Teklif kapsamı"
+          "es": "Alcance de la cotización",
+          "ru": "Состав предложения"
         },
         "value": {
           "en": "Bearing, seal or kit — specify in enquiry",
-          "tr": "Rulman, keçe veya set — talepte belirtin"
+          "es": "Rodamiento, retén o kit — indíquelo en la solicitud",
+          "ru": "Подшипник, сальник или комплект — укажите в запросе"
         }
       }
     ]
@@ -238,11 +270,13 @@ window.WLF_PRODUCTS = [
     "oem": "R208731",
     "name": {
       "en": "Transmission drive gear",
-      "tr": "Şanzıman tahrik dişlisi"
+      "es": "Engranaje de transmisión",
+      "ru": "Ведущая шестерня трансмиссии"
     },
     "description": {
       "en": "A transmission gear sourcing example. Share the gear marking, tooth count and machine model for a part-identification review.",
-      "tr": "Şanzıman dişlisi tedarik örneği. Parça tanımlama incelemesi için dişli kodunu, diş sayısını ve makine modelini paylaşın."
+      "es": "Ejemplo de engranaje de transmisión para una solicitud de suministro. Facilite la referencia del engranaje, el número de dientes y el modelo de la máquina para identificar la pieza.",
+      "ru": "Образец шестерни трансмиссии для запроса на поставку. Для идентификации детали укажите маркировку шестерни, число зубьев и модель машины."
     },
     "category": "tractor",
     "group": "transmission",
@@ -260,31 +294,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Transmission gearing",
-          "tr": "Şanzıman dişlileri"
+          "es": "Engranajes de transmisión",
+          "ru": "Шестерни трансмиссии"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Gear marking + tooth count",
-          "tr": "Dişli kodu + diş sayısı"
+          "es": "Referencia del engranaje + número de dientes",
+          "ru": "Маркировка шестерни + число зубьев"
         }
       },
       {
         "label": {
           "en": "Enquiry detail",
-          "tr": "Talep detayı"
+          "es": "Detalle de la solicitud",
+          "ru": "Сведения для запроса"
         },
         "value": {
           "en": "Photos of both faces are helpful",
-          "tr": "Her iki yüzün fotoğrafı faydalıdır"
+          "es": "Se recomienda incluir fotografías de ambas caras",
+          "ru": "Рекомендуется приложить фотографии с обеих сторон"
         }
       }
     ]
@@ -295,11 +335,13 @@ window.WLF_PRODUCTS = [
     "oem": "RE504836",
     "name": {
       "en": "Engine filter element",
-      "tr": "Motor filtre elemanı"
+      "es": "Elemento filtrante del motor",
+      "ru": "Фильтрующий элемент двигателя"
     },
     "description": {
       "en": "A filter-element enquiry example. The existing filter reference and engine code help confirm the requested filter type.",
-      "tr": "Filtre elemanı talep örneği. Mevcut filtre referansı ve motor kodu, istenen filtre tipinin belirlenmesini kolaylaştırır."
+      "es": "Ejemplo de elemento filtrante para una solicitud de suministro. La referencia del filtro instalado y el código del motor ayudan a confirmar el tipo de filtro solicitado.",
+      "ru": "Образец фильтрующего элемента для запроса на поставку. Артикул установленного фильтра и код двигателя помогут уточнить требуемый тип фильтра."
     },
     "category": "tractor",
     "group": "engine",
@@ -319,31 +361,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Engine filtration",
-          "tr": "Motor filtrasyonu"
+          "es": "Filtración del motor",
+          "ru": "Фильтрация двигателя"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Existing filter reference + engine code",
-          "tr": "Mevcut filtre referansı + motor kodu"
+          "es": "Referencia del filtro instalado + código del motor",
+          "ru": "Артикул установленного фильтра + код двигателя"
         }
       },
       {
         "label": {
           "en": "Quote scope",
-          "tr": "Teklif kapsamı"
+          "es": "Alcance de la cotización",
+          "ru": "Состав предложения"
         },
         "value": {
           "en": "Single element or service set",
-          "tr": "Tek filtre elemanı veya bakım seti"
+          "es": "Elemento individual o kit de mantenimiento",
+          "ru": "Отдельный элемент или комплект для обслуживания"
         }
       }
     ]
@@ -354,11 +402,13 @@ window.WLF_PRODUCTS = [
     "oem": "H213508",
     "name": {
       "en": "Harvester knife section",
-      "tr": "Biçerdöver bıçak yaprağı"
+      "es": "Sección de cuchilla de cosechadora",
+      "ru": "Сегмент ножа жатки"
     },
     "description": {
       "en": "A cutting-section example for a combine header. Include the cutter bar details, hole spacing and requested quantity in your enquiry.",
-      "tr": "Biçerdöver tablası için kesici bıçak örneği. Talebinize kesici düzen bilgisi, delik aralığı ve istenen miktarı ekleyin."
+      "es": "Ejemplo de sección de cuchilla para un cabezal de cosechadora. Incluya en su solicitud los datos de la barra de corte, la distancia entre orificios y la cantidad necesaria.",
+      "ru": "Образец сегмента ножа для жатки комбайна. Укажите в запросе данные режущего аппарата, расстояние между отверстиями и требуемое количество."
     },
     "category": "harvester",
     "group": "cutting",
@@ -378,31 +428,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Header cutting system",
-          "tr": "Tabla kesme sistemi"
+          "es": "Sistema de corte del cabezal",
+          "ru": "Режущий аппарат жатки"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Section reference + mounting hole spacing",
-          "tr": "Bıçak referansı + bağlantı delik aralığı"
+          "es": "Referencia de la sección + distancia entre orificios de fijación",
+          "ru": "Артикул сегмента + расстояние между крепёжными отверстиями"
         }
       },
       {
         "label": {
           "en": "Enquiry detail",
-          "tr": "Talep detayı"
+          "es": "Detalle de la solicitud",
+          "ru": "Сведения для запроса"
         },
         "value": {
           "en": "Header make, model and working width",
-          "tr": "Tabla markası, modeli ve çalışma genişliği"
+          "es": "Marca, modelo y anchura de trabajo del cabezal",
+          "ru": "Марка, модель и рабочая ширина жатки"
         }
       }
     ]
@@ -413,11 +469,13 @@ window.WLF_PRODUCTS = [
     "oem": "84029855",
     "name": {
       "en": "Combine cleaning sieve",
-      "tr": "Biçerdöver temizleme eleği"
+      "es": "Criba de limpieza de cosechadora",
+      "ru": "Решето очистки комбайна"
     },
     "description": {
       "en": "A cleaning-sieve sourcing example. Share the combine model, sieve position and frame dimensions for the quotation review.",
-      "tr": "Temizleme eleği tedarik örneği. Teklif incelemesi için biçerdöver modeli, elek konumu ve çerçeve ölçülerini paylaşın."
+      "es": "Ejemplo de criba de limpieza para una solicitud de suministro. Facilite el modelo de la cosechadora, la posición de la criba y las dimensiones del bastidor para evaluar la cotización.",
+      "ru": "Образец решета очистки для запроса на поставку. Для подготовки предложения укажите модель комбайна, положение решета и размеры рамы."
     },
     "category": "harvester",
     "group": "cutting",
@@ -435,31 +493,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Crop cleaning system",
-          "tr": "Ürün temizleme sistemi"
+          "es": "Sistema de limpieza del grano",
+          "ru": "Система очистки зерна"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Upper/lower position + frame dimensions",
-          "tr": "Üst/alt konum + çerçeve ölçüleri"
+          "es": "Posición superior/inferior + dimensiones del bastidor",
+          "ru": "Верхнее/нижнее положение + размеры рамы"
         }
       },
       {
         "label": {
           "en": "Enquiry detail",
-          "tr": "Talep detayı"
+          "es": "Detalle de la solicitud",
+          "ru": "Сведения для запроса"
         },
         "value": {
           "en": "Combine model + existing part reference",
-          "tr": "Biçerdöver modeli + mevcut parça referansı"
+          "es": "Modelo de la cosechadora + referencia de la pieza instalada",
+          "ru": "Модель комбайна + артикул установленной детали"
         }
       }
     ]
@@ -470,11 +534,13 @@ window.WLF_PRODUCTS = [
     "oem": "AZ101308",
     "name": {
       "en": "Feeder house chain",
-      "tr": "Besleme elevatörü zinciri"
+      "es": "Cadena del transportador del alimentador",
+      "ru": "Цепь наклонной камеры"
     },
     "description": {
       "en": "A feeder-chain enquiry example. Chain pitch, slat arrangement and the combine serial number help define the required assembly.",
-      "tr": "Besleme zinciri talep örneği. Zincir adımı, lama düzeni ve biçerdöver seri numarası istenen parçanın belirlenmesini kolaylaştırır."
+      "es": "Ejemplo de cadena del alimentador para una solicitud de suministro. El paso de la cadena, la disposición de los travesaños y el número de serie de la cosechadora ayudan a definir el conjunto necesario.",
+      "ru": "Образец цепи наклонной камеры для запроса на поставку. Шаг цепи, расположение планок и серийный номер комбайна помогут определить требуемый узел."
     },
     "category": "harvester",
     "group": "transmission",
@@ -492,31 +558,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Feeder house drive",
-          "tr": "Besleme elevatörü tahriki"
+          "es": "Accionamiento del alimentador",
+          "ru": "Привод наклонной камеры"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Chain pitch + number of links",
-          "tr": "Zincir adımı + bakla sayısı"
+          "es": "Paso de la cadena + número de eslabones",
+          "ru": "Шаг цепи + число звеньев"
         }
       },
       {
         "label": {
           "en": "Quote scope",
-          "tr": "Teklif kapsamı"
+          "es": "Alcance de la cotización",
+          "ru": "Состав предложения"
         },
         "value": {
           "en": "Chain or complete slat assembly",
-          "tr": "Zincir veya komple lamalı set"
+          "es": "Cadena o conjunto completo con travesaños",
+          "ru": "Цепь или транспортёр с планками в сборе"
         }
       }
     ]
@@ -527,11 +599,13 @@ window.WLF_PRODUCTS = [
     "oem": "WLF6102",
     "name": {
       "en": "Cultivator spring tine",
-      "tr": "Kültivatör yaylı ayak"
+      "es": "Diente elástico de cultivador",
+      "ru": "Пружинная стойка культиватора"
     },
     "description": {
       "en": "A spring-tine sourcing example for soil-working equipment. Include the tine profile, mounting details and machine make in your request.",
-      "tr": "Toprak işleme ekipmanları için yaylı ayak tedarik örneği. Talebinize ayak profili, bağlantı bilgileri ve makine markasını ekleyin."
+      "es": "Ejemplo de diente elástico para equipos de preparación del suelo. Incluya en su solicitud el perfil del diente, los detalles de fijación y la marca de la máquina.",
+      "ru": "Образец пружинной стойки для почвообрабатывающей техники. Укажите в запросе профиль стойки, данные крепления и марку машины."
     },
     "category": "tillage",
     "group": "soil",
@@ -541,8 +615,11 @@ window.WLF_PRODUCTS = [
       "Fendt"
     ],
     "models": [
-      "Cultivator — confirm implement model",
-      "Kültivatör — ekipman modelini belirtin"
+      {
+        "en": "Cultivator — confirm implement model",
+        "es": "Cultivador — confirme el modelo del apero",
+        "ru": "Культиватор — уточните модель орудия"
+      }
     ],
     "sourcing": "made-to-order",
     "image": "assets/parts/cultivator-tine.svg",
@@ -550,31 +627,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Cultivator wear parts",
-          "tr": "Kültivatör aşınma parçaları"
+          "es": "Piezas de desgaste para cultivadores",
+          "ru": "Изнашиваемые детали культиватора"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Tine profile + mounting hole dimensions",
-          "tr": "Ayak profili + bağlantı delik ölçüleri"
+          "es": "Perfil del diente + dimensiones de los orificios de fijación",
+          "ru": "Профиль стойки + размеры крепёжных отверстий"
         }
       },
       {
         "label": {
           "en": "Enquiry detail",
-          "tr": "Talep detayı"
+          "es": "Detalle de la solicitud",
+          "ru": "Сведения для запроса"
         },
         "value": {
           "en": "Implement make and model are required",
-          "tr": "Ekipman markası ve modeli gereklidir"
+          "es": "Es necesario indicar la marca y el modelo del apero",
+          "ru": "Необходимо указать марку и модель орудия"
         }
       }
     ]
@@ -585,11 +668,13 @@ window.WLF_PRODUCTS = [
     "oem": "WLF4805",
     "name": {
       "en": "Concave tillage disc",
-      "tr": "Bombeli toprak işleme diski"
+      "es": "Disco cóncavo de labranza",
+      "ru": "Вогнутый почвообрабатывающий диск"
     },
     "description": {
       "en": "A disc example for tillage equipment. Disc diameter, centre opening and mounting pattern should be included for identification.",
-      "tr": "Toprak işleme ekipmanları için disk örneği. Tanımlama için disk çapı, merkez açıklığı ve bağlantı düzeni paylaşılmalıdır."
+      "es": "Ejemplo de disco para equipos de labranza. Para su identificación, indique el diámetro del disco, la abertura central y la disposición de los puntos de fijación.",
+      "ru": "Образец диска для почвообрабатывающей техники. Для идентификации укажите диаметр диска, размер центрального отверстия и схему крепления."
     },
     "category": "tillage",
     "group": "soil",
@@ -599,8 +684,11 @@ window.WLF_PRODUCTS = [
       "Case IH"
     ],
     "models": [
-      "Disc harrow — confirm implement model",
-      "Diskaro — ekipman modelini belirtin"
+      {
+        "en": "Disc harrow — confirm implement model",
+        "es": "Grada de discos — confirme el modelo del apero",
+        "ru": "Дисковая борона — уточните модель орудия"
+      }
     ],
     "sourcing": "enquiry",
     "image": "assets/parts/tillage-disc.svg",
@@ -608,31 +696,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Disc harrow wear parts",
-          "tr": "Diskaro aşınma parçaları"
+          "es": "Piezas de desgaste para gradas de discos",
+          "ru": "Изнашиваемые детали дисковой бороны"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Diameter + centre opening + thickness",
-          "tr": "Çap + merkez açıklığı + kalınlık"
+          "es": "Diámetro + abertura central + espesor",
+          "ru": "Диаметр + центральное отверстие + толщина"
         }
       },
       {
         "label": {
           "en": "Enquiry detail",
-          "tr": "Talep detayı"
+          "es": "Detalle de la solicitud",
+          "ru": "Сведения для запроса"
         },
         "value": {
           "en": "Plain or notched edge requirement",
-          "tr": "Düz veya çentikli kenar ihtiyacı"
+          "es": "Indique si necesita borde liso o dentado",
+          "ru": "Укажите, требуется гладкая или вырезная кромка"
         }
       }
     ]
@@ -643,11 +737,13 @@ window.WLF_PRODUCTS = [
     "oem": "WLF3908",
     "name": {
       "en": "Roller bearing unit",
-      "tr": "Merdane yatak ünitesi"
+      "es": "Soporte de rodamiento de rodillo",
+      "ru": "Подшипниковый узел катка"
     },
     "description": {
       "en": "A bearing-unit example for soil-working machinery. Housing dimensions, shaft diameter and the implement model help prepare the enquiry.",
-      "tr": "Toprak işleme makineleri için yatak ünitesi örneği. Gövde ölçüleri, mil çapı ve ekipman modeli teklif talebini hazırlamayı kolaylaştırır."
+      "es": "Ejemplo de soporte de rodamiento para maquinaria de preparación del suelo. Las dimensiones del soporte, el diámetro del eje y el modelo del apero ayudan a preparar la solicitud.",
+      "ru": "Образец подшипникового узла для почвообрабатывающей техники. Размеры корпуса, диаметр вала и модель орудия помогут подготовить запрос."
     },
     "category": "tillage",
     "group": "axle",
@@ -657,8 +753,11 @@ window.WLF_PRODUCTS = [
       "Massey Ferguson"
     ],
     "models": [
-      "Packer roller — confirm implement model",
-      "Merdane — ekipman modelini belirtin"
+      {
+        "en": "Packer roller — confirm implement model",
+        "es": "Rodillo compactador — confirme el modelo del apero",
+        "ru": "Прикатывающий каток — уточните модель орудия"
+      }
     ],
     "sourcing": "enquiry",
     "image": "assets/parts/roller-bearing.svg",
@@ -666,31 +765,37 @@ window.WLF_PRODUCTS = [
       {
         "label": {
           "en": "Part group",
-          "tr": "Parça grubu"
+          "es": "Grupo de piezas",
+          "ru": "Группа деталей"
         },
         "value": {
           "en": "Roller bearings and housings",
-          "tr": "Merdane rulmanları ve yatakları"
+          "es": "Rodamientos y soportes de rodillo",
+          "ru": "Подшипники и корпуса катка"
         }
       },
       {
         "label": {
           "en": "Identification needed",
-          "tr": "Tanımlama için gerekli"
+          "es": "Datos necesarios para la identificación",
+          "ru": "Данные для идентификации"
         },
         "value": {
           "en": "Shaft diameter + housing dimensions",
-          "tr": "Mil çapı + yatak gövdesi ölçüleri"
+          "es": "Diámetro del eje + dimensiones del soporte",
+          "ru": "Диаметр вала + размеры корпуса"
         }
       },
       {
         "label": {
           "en": "Quote scope",
-          "tr": "Teklif kapsamı"
+          "es": "Alcance de la cotización",
+          "ru": "Состав предложения"
         },
         "value": {
           "en": "Insert bearing or complete housing unit",
-          "tr": "İç rulman veya komple yatak ünitesi"
+          "es": "Rodamiento insertable o unidad completa con soporte",
+          "ru": "Вставной подшипник или узел с корпусом в сборе"
         }
       }
     ]

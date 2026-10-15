@@ -1,6 +1,14 @@
 # WLF Agri Parts
 
-A responsive English/Turkish B2B agricultural spare-parts website, redesigned from the user's home-page and catalogue references. Prices, checkout and dealer login are not part of this site.
+## WordPress version
+
+The editable WordPress version is now under `wordpress/`. Install `downloads/wlf-agri-core.zip` as a plugin and `downloads/wlf-agri-theme.zip` as a theme, using the native WordPress dashboard. The Turkish installation and editing guide is [wordpress/KURULUM.md](wordpress/KURULUM.md).
+
+The public languages are now **English, Spanish and Russian**. Turkish was removed from the public language selector. Phone and the small animated WhatsApp button are configured in **Appearance → Customize → WLF — İletişim ve marka**; empty numbers stay hidden. Page copy/layout uses native editable Gutenberg blocks with Spanish/Russian translation fields. Product management and private quotation records live in the companion plugin, so they survive theme changes.
+
+Rebuild both WordPress ZIPs with `python3 tools/package_wordpress.py`. They include no database, production credentials, local runtime secrets or test mail interceptor. Real SMTP delivery and production installation have not been verified. The sections below document the original standalone static version and its older cPanel packages; those HTML pages are independent of WordPress.
+
+A responsive English/Spanish/Russian B2B agricultural spare-parts website, redesigned from the user's home-page and catalogue references. Prices, checkout and dealer login are not part of this site.
 
 ## Run locally
 
@@ -17,8 +25,8 @@ Entry points: `index.html`, `products.html`, `about.html`, `quote.html`, `contac
 
 `catalog-data.js` contains 12 **illustrative** records with local technical SVG artwork. WLF codes, OEM references, model associations, specifications and sourcing states are samples, not a verified commercial catalogue. Replace these records and illustrations with approved product information and actual product photos before commercial use. Do not infer stock, origin or guaranteed compatibility from this demonstration.
 
-- Search by part name in either language, OEM number, WLF code, brand or model.
-- Reference searches tolerate spaces and punctuation; text searches normalize Turkish characters.
+- Search by part name in any of the three languages, OEM number, WLF code, brand or model.
+- Reference searches tolerate spaces and punctuation; text searches normalize accented Latin and Cyrillic text.
 - Category, machine brand, component group and sourcing filters combine across groups; selections within one group use OR.
 - Filter counts describe the complete sample dataset. Search/filter/sort choices and product-detail links can be shared through URL parameters.
 - Product details include sample specifications, model references and an add-to-enquiry action.

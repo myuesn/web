@@ -1,0 +1,59 @@
+/* Native WordPress blocks retain the original site's layout. */
+.wlf-page-content > .wp-block-group { margin-block: 0; }
+.wp-block-group.container, .wp-block-columns.container { margin-inline: auto; }
+.wlf-page-content .wp-block-columns { margin-bottom: 0; }
+.wlf-page-content .wp-block-heading { color: inherit; }
+.wlf-page-content .wp-block-image { margin: 0; }
+.wlf-page-content .wp-block-image img { width: 100%; height: 100%; object-fit: cover; }
+.wlf-page-content .wp-block-button__link { border-radius: 0; background: var(--gold, #f3bb12); color: var(--ink, #202824); font-size: 13px; font-weight: 700; padding: 16px 25px; }
+.wlf-page-content .wp-block-button__link:hover { filter: brightness(.96); }
+.wlf-page-content .is-style-outline .wp-block-button__link { background: transparent; border: 1px solid currentColor; color: var(--green, #174d36); }
+.wlf-page-content .wp-block-buttons { gap: 20px; }
+.wlf-page-content .hero-background.wp-block-image { position: absolute; margin: 0; inset: 0; z-index: -2; }
+.wlf-page-content .hero-inner, .wlf-page-content .hero-content { margin-block: 0; }
+.wlf-page-content .hero-content .eyebrow { margin-top: 0; }
+.wlf-page-content .hero-content > p:not(.eyebrow) { max-width: 455px; margin-top: 25px; }
+.wlf-page-content .hero-content > h1, .wlf-page-content .hero-content > .hero-heading-line { color: var(--ink, #202824); font-size: clamp(43px, 5.3vw, 77px); font-weight: 750; line-height: 1.055; letter-spacing: -3.6px; max-width: none; }
+.wlf-page-content .hero-content > p.hero-heading-line { margin: 0; }
+.wlf-page-content .hero-content > .hero-heading-accent { color: var(--green, #174d36); }
+.wlf-page-content .hero-content > h1 { margin-bottom: 0; }
+.wlf-page-content .hero-content > p.hero-meta { font-size: 10px; margin-top: 34px; }
+.wlf-page-content .hero-actions.wp-block-buttons { margin-top: 30px; }
+.wlf-page-content .category-grid > .wp-block-group { margin: 0; }
+.wlf-page-content .category-card { display: flex; flex-direction: column; align-items: flex-start; }
+.wlf-page-content .category-card .wp-block-buttons { margin-top: auto; padding-top: 25px; }
+.wlf-page-content .category-card .wp-block-button__link { background: none; color: var(--green, #174d36); padding: 0; text-align: left; }
+.wlf-page-content .about-grid, .wlf-page-content .split-grid, .wlf-page-content .values-grid, .wlf-page-content .category-grid, .wlf-page-content .contact-grid { display: grid; }
+.wlf-page-content .about-grid { grid-template-columns: 1fr 1fr; }
+.wlf-page-content .about-image { min-height: 440px; }
+.wlf-page-content .about-image img { min-height: 440px; }
+.wlf-page-content .page-intro h1 { max-width: 1100px; }
+.wlf-page-content .cta-inner .wp-block-buttons { flex-shrink: 0; }
+.main-nav > ul, .main-nav ul { display: flex; align-items: center; gap: 24px; list-style: none; margin: 0; padding: 0; }
+.main-nav ul ul { display: none; position: absolute; background: white; padding: 15px; z-index: 20; }
+.main-nav li:hover > ul, .main-nav li:focus-within > ul { display: flex; flex-direction: column; align-items: flex-start; }
+.footer-brand .logo { background: white; padding: 10px; }
+.footer-links ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 9px; }
+.wlf-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
+body.admin-bar .header { top: 32px; }
+.wlf-no-content { padding-block: 80px; }
+.wlf-single-product { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: start; }
+.wlf-single-product .detail-image { min-height: 400px; display: grid; place-items: center; background: #f6f5ef; }
+.wlf-single-product .detail-image img { width: 100%; max-height: 530px; object-fit: contain; }
+.wlf-single-product .detail-description { white-space: pre-line; margin-block: 20px; }
+.wlf-single-product .spec-table { width: 100%; margin-block: 25px; border-collapse: collapse; }
+.wlf-single-product .spec-table th, .wlf-single-product .spec-table td { padding: 12px 8px; border-bottom: 1px solid var(--line, #ddd); text-align: left; font-size: 13px; }
+.wlf-single-product .spec-table th { font-weight: 500; color: var(--muted, #5b665e); }
+.wlf-single-product h2 { font-size: 22px; margin-top: 25px; }
+.editor-styles-wrapper .hero { isolation: isolate; }
+.editor-styles-wrapper .hero-background { position: relative !important; z-index: auto !important; max-height: 260px; }
+.editor-styles-wrapper .hero-content { width: 100%; padding-block: 30px; }
+.editor-styles-wrapper .category-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 1000px) { .main-nav > ul { flex-direction: column; align-items: stretch; gap: 0; width: 100%; } }
+@media (max-width: 782px) { body.admin-bar .header { top: 46px; } }
+@media (max-width: 760px) {
+  .wlf-page-content .about-grid { grid-template-columns: 1fr; }
+  .wlf-single-product { grid-template-columns: 1fr; gap: 30px; }
+  .wlf-page-content .about-image, .wlf-page-content .about-image img { min-height: 300px; }
+  .wlf-page-content .hero-content > h1, .wlf-page-content .hero-content > .hero-heading-line { font-size: clamp(42px, 8.5vw, 60px); line-height: 1.07; letter-spacing: -2.2px; }
+}
