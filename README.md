@@ -56,3 +56,11 @@ Replace sample products, confirm company copy, and add approved company/contact/
 ## Logo update on existing cPanel installation
 
 The `downloads/wlf-logo-update.zip` package contains only the five HTML pages, updated stylesheet and the three original logo PNGs, directly at the archive root with an `assets/` folder. Back up the existing files, upload this ZIP **inside the existing site folder** (for example `public_html/yeni/web-main`), and extract in that same directory, replacing matching files. No folder movement is required. This updates the static site's branding; it does not change the parent WordPress installation, DNS or mail settings. After verification, remove the uploaded ZIP from hosting. GitHub is only used to distribute the downloadable package; the site can continue to run entirely on Veridyen.
+
+## Complete cPanel installation or recovery
+
+**If the previous site files have been removed, use `downloads/wlf-tam-site.zip`.** The logo-update ZIP is an overlay and cannot replace a full installation. The full ZIP includes all five HTML pages, `style.css`, `app.js`, `catalog-data.js`, original logos, favicon, hero image and product illustrations. It has no enclosing folder. Files use 0644 and asset folders use 0755 permissions.
+
+For the current hosting layout, upload the full ZIP inside **`public_html/yeni`**, then extract it in that same folder, replacing matching site files. Do not delete the current files first, and do not move the extracted contents. The entry file will be `public_html/yeni/index.html`, so the site URL is **`https://wlfagriparts.com/yeni/`**, without a `web-main` segment. The parent WordPress installation remains separate.
+
+Regenerate the complete package after source changes with `python3 tools/package_site.py`. Never extract it at `public_html` over an existing parent website. After checking the deployed pages, remove uploaded ZIPs from hosting.
