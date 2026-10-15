@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Notched concave tillage disc — catalogue illustration</title>
+  <defs>
+    <radialGradient id="disc" cx=".44" cy=".41" r=".67"><stop stop-color="#66796b"/><stop offset=".21" stop-color="#aebcac"/><stop offset=".47" stop-color="#d7dfd0"/><stop offset=".67" stop-color="#879a87"/><stop offset=".86" stop-color="#b8c6b2"/><stop offset="1" stop-color="#4f6851"/></radialGradient>
+    <linearGradient id="hub" x1="190" y1="130" x2="296" y2="267" gradientUnits="userSpaceOnUse"><stop stop-color="#e1e8d8"/><stop offset=".43" stop-color="#6d846c"/><stop offset=".68" stop-color="#aebe9f"/><stop offset="1" stop-color="#3c593d"/></linearGradient>
+    <filter id="shadow" x="-35%" y="-25%" width="170%" height="165%"><feDropShadow dx="5" dy="16" stdDeviation="13" flood-color="#243b29" flood-opacity=".22"/></filter>
+  </defs>
+  <g filter="url(#shadow)" transform="rotate(-18 250 200)">
+    <path d="m251 49 22 16 26-8 17 24 28 2 9 27 25 12-2 29 19 20-12 26 9 27-21 19-1 29-27 9-11 27-28-2-21 20-25-12-27 10-18-22-28-1-9-27-25-12 2-28-18-22 12-25-9-28 21-18 1-29 26-9 11-27 28 2Z" fill="#2f4b35" stroke="#314d36" stroke-width="3"/>
+    <path d="m247 42 22 16 26-8 17 24 28 2 9 27 25 12-2 29 19 20-12 26 9 27-21 19-1 29-27 9-11 27-28-2-21 20-25-12-27 10-18-22-28-1-9-27-25-12 2-28-18-22 12-25-9-28 21-18 1-29 26-9 11-27 28 2Z" fill="url(#disc)" stroke="#7d927a" stroke-width="2.5"/>
+    <ellipse cx="249" cy="192" rx="113" ry="128" stroke="#e1e9d7" stroke-opacity=".7" stroke-width="2"/>
+    <ellipse cx="249" cy="192" rx="101" ry="115" stroke="#526e50" stroke-opacity=".35"/>
+    <ellipse cx="248" cy="193" rx="79" ry="91" fill="url(#hub)" stroke="#9eb194" stroke-width="2"/>
+    <ellipse cx="248" cy="193" rx="54" ry="62" stroke="#e3ebd7" stroke-opacity=".45" stroke-width="2"/>
+    <ellipse cx="248" cy="193" rx="30" ry="36" fill="#3b563c" stroke="#c7d4b8" stroke-width="4"/>
+    <ellipse cx="250" cy="196" rx="24" ry="29" fill="#1d3824"/>
+    <path d="m247 159 7 4-7 6" stroke="#f0f2df" stroke-width="2"/>
+    <g fill="#344f35" stroke="#d8e3ca" stroke-width="2"><ellipse cx="247" cy="136" rx="5" ry="6"/><ellipse cx="294" cy="193" rx="5" ry="6"/><ellipse cx="248" cy="250" rx="5" ry="6"/><ellipse cx="202" cy="193" rx="5" ry="6"/></g>
+    <path d="m194 88 14-7m-62 48 10-13m-26 68 3-14m11 74-4-13m45 66-12-8m88 27-17 2m76-37-12 13m43-71-2 15m-14-82 7 14m-48-68 12 8" stroke="#eef2df" stroke-opacity=".7" stroke-width="2" stroke-linecap="round"/>
+    <path d="m270 276 24-9 4 10-24 9Z" fill="#c9a34e" stroke="#897035"/>
+  </g>
+</svg>

@@ -1,59 +1,278 @@
-const tr = {
-top:'TARIM YEDEK PARÇALARI. ULUSLARARASI TİCARET.',topRight:'Bir sonraki sezonunuz için.',navParts:'Yedek parçalar',navAbout:'Yaklaşımımız',navExport:'İhracat süreci',request:'Teklif iste',eyebrow:'BİR SONRAKİ SEZON BURADA BAŞLAR',heroTitle:'Küçük parçalar.<br>Büyük <em>hasatlar.</em>',heroText:'Dünyayı besleyen makineler çalışmaya devam etsin. İthalatçılar, distribütörler ve tarım ekipmanı profesyonelleri için yedek parçalar.',browse:'Yedek parçaları keşfet',how:'Nasıl çalışıyoruz',heroNote:'Traktör ve hasat makinesi parçaları · B2B ihracat talepleri',artLabel:'TARLA İÇİN TASARLANDI',benefit1:'Makinenize uygun parçalar',benefit2:'Kolay ticari teklif talepleri',benefit3:'İhracat odaklı tedarik',catalogEye:'FARK YARATAN PARÇA',catalogTitle:'Makinenize güç katın.',catalogText:'Teklif kategorilerimizi keşfedin. Size özel teklif için parça numarası ve makine bilgilerinizi paylaşın.',all:'Tüm parçalar',tractor:'Traktör parçaları',harvester:'Hasat makinesi parçaları',search:'Parça ara…',cantFind:'Aradığınız parçayı bulamadınız mı? OEM referansını veya parça bilgisini paylaşın.',custom:'Bir parça hakkında sor',approachEye:'PARÇA NUMARASININ ÖTESİNDE',approachTitle:'İşiniz bizim<br>odak noktamız.',approachText:'Verimli bir sezon doğru iletişimle başlar. İhtiyacınızı, teslimat ülkesini ve işletmeniz için önemli olan detayları bizimle paylaşın.',fitTitle:'Önce uyumluluk',fitText:'Makine modeli, OEM referansı ve ölçüler teklif öncesi uyumluluğu değerlendirmemize yardımcı olur.',tradeTitle:'Ticaret için tasarlandı',tradeText:'Miktar, teslimat ülkesi ve ambalaj ihtiyaçlarını paylaşın; talebinize doğru bilgilerle başlayalım.',exportEye:'TALEBİNİZDEN TESLİMAT NOKTANIZA',exportTitle:'Parçalarınıza giden net bir yol.',start:'Talep oluştur',step1Title:'Parça listenizi oluşturun',step1:'Bir kategori seçin; referansları, makine modellerini ve ihtiyaç duyduğunuz miktarları ekleyin.',step2Title:'İhtiyaçlarınızı görüşelim',step2:'Stok, uyumluluk, tedarik süreleri ve ticari koşullar teklif aşamasında teyit edilir.',step3Title:'Sevkiyatınızı planlayın',step3:'Siparişten önce teslimat noktası, teslim şekli ve gerekli belgeler üzerinde anlaşın.',ctaEye:'İŞİNİZİ BİRLİKTE İLERLETELİM',ctaTitle:'Doğru parça. Yeni fırsatlar.',footer:'Tarım yedek parçaları. Dünyaya açılan fırsatlar.',prototype:'Gösterilenler teklif kategorileridir. Ürün uyumluluğu ve stok durumu teklif aşamasında teyit edilir.',quoteEye:'PARÇALARI KONUŞALIM',quoteTitle:'Teklif talebiniz',formIntro:'Talebinizi hazırlayın. E-posta düğmesi posta uygulamanızı açar; göndermeden önce inceleyebilirsiniz.',company:'Firma *',name:'İletişim kişisi *',email:'Kurumsal e-posta *',country:'Teslimat ülkesi *',details:'Parça numaraları, makine modelleri, miktarlar ve diğer ihtiyaçlar *',privacy:'Form doğrudan sunucuya gönderilmez. Bilgileriniz hazırlanan e-postaya veya indirdiğiniz dosyaya eklenir.',download:'Talebi indir',send:'E-posta ile teklif iste',add:'Teklif listesine ekle',added:'Listeye eklendi',remove:'Listeden çıkar',empty:'Aramanızla eşleşen parça bulunamadı.',statusDownload:'Talep dosyası hazırlandı. Teklif için sales@wlfagriparts.com adresine gönderebilirsiniz.',statusEmail:'Talebiniz e-posta uygulamanızda açılmak üzere hazırlandı. Göndermek için posta uygulamanızdan onaylayın. Açılmadıysa talebi indirip sales@wlfagriparts.com adresine gönderin.',noItems:'Belirli bir parçayı aşağıdaki alanda tarif edebilirsiniz.'
-};
-const en = {};
-document.querySelectorAll('[data-i18n]').forEach(el => { en[el.dataset.i18n] = el.textContent; });
-document.querySelectorAll('[data-i18n-html]').forEach(el => { en[el.dataset.i18nHtml] = el.innerHTML; });
-Object.assign(en,{search:'Search parts…',add:'Add to enquiry',added:'Added to enquiry',remove:'Remove from enquiry',empty:'No parts match your search.',send:'Request a quote by email',statusDownload:'Your enquiry file is ready. Send it to sales@wlfagriparts.com to request a quotation.',statusEmail:'Your enquiry has been prepared for your email application. Review and send it there. If it did not open, download your enquiry and email it to sales@wlfagriparts.com.',noItems:'You can describe a specific part in the details field below.'});
-let lang = 'en', filter = 'all';
-const selected = new Set();
-const parts = [
-{id:'engine',type:'tractor',en:'Engine & filtration',tr:'Motor ve filtreler',descEn:'Filters, gaskets & engine components',descTr:'Filtreler, contalar ve motor bileşenleri',shape:'filter'},
-{id:'transmission',type:'tractor',en:'Transmission & drive',tr:'Şanzıman ve aktarma',descEn:'Gears, clutch & drivetrain components',descTr:'Dişliler, debriyaj ve aktarma bileşenleri',shape:'gear'},
-{id:'cutting',type:'harvester',en:'Cutting & harvesting',tr:'Kesim ve hasat',descEn:'Knife sections, guards & cutting parts',descTr:'Bıçaklar, parmaklar ve kesim parçaları',shape:'blade'},
-{id:'belts',type:'harvester',en:'Belts & bearings',tr:'Kayışlar ve rulmanlar',descEn:'Drive belts, bearings & moving parts',descTr:'Tahrik kayışları, rulmanlar ve hareketli parçalar',shape:'bearing'}
-];
-function t(key){return (lang === 'tr' ? tr : en)[key] || en[key] || key;}
-function illustration(shape){
-const defs='<defs><linearGradient id="steel-'+shape+'" x2="1" y2="1"><stop stop-color="#d0d5cc"/><stop offset=".25" stop-color="#f0f1e9"/><stop offset=".55" stop-color="#717e70"/><stop offset="1" stop-color="#354539"/></linearGradient></defs>';
-const metal='url(#steel-'+shape+')';
-let content='';
-if(shape==='filter') content='<ellipse cx="133" cy="207" rx="72" ry="13" fill="#25362a" opacity=".1"/><g transform="rotate(-14 130 130)"><path d="M81 67h94v126c-5 24-90 24-94 0z" fill="#c5cbbd"/><path d="M89 73h78v118c-4 16-74 16-78 0z" fill="#b9a978"/>'+Array.from({length:12},(_,i)=>'<path d="M'+(91+i*6.4)+' 77v118" stroke="#7f7e5c" stroke-width="2"/>').join('')+'<ellipse cx="128" cy="69" rx="48" ry="19" fill="'+metal+'"/><ellipse cx="128" cy="68" rx="24" ry="10" fill="#354536"/><ellipse cx="128" cy="68" rx="12" ry="5" fill="#aab6a1"/><path d="M81 187v9c6 23 88 23 94 0v-9c-6 19-88 19-94 0" fill="'+metal+'"/></g>';
-if(shape==='gear') {content='<ellipse cx="133" cy="210" rx="80" ry="11" fill="#25362a" opacity=".1"/><g transform="translate(130 126) rotate(-15)">';for(let i=0;i<12;i++)content+='<rect x="-14" y="-93" width="28" height="40" rx="3" transform="rotate('+i*30+')" fill="'+metal+'" stroke="#6f7e6a"/>'; content+='<circle r="70" fill="'+metal+'" stroke="#879481" stroke-width="3"/><circle r="49" fill="#53634e"/><circle r="40" fill="'+metal+'"/><circle r="23" fill="#3b4e3d"/><path d="m-8-22 16 0v-10H-8z" fill="#3b4e3d"/></g>';}
-if(shape==='blade')content='<ellipse cx="132" cy="208" rx="90" ry="10" fill="#25362a" opacity=".1"/><g transform="rotate(-26 130 130)"><path d="M34 140h196v27H34z" fill="'+metal+'" stroke="#687863"/>'+[45,106,167].map(x=>'<path d="m'+x+' 145 25-90 31 90z" fill="'+metal+'" stroke="#63725e" stroke-width="2"/><circle cx="'+(x+25)+'" cy="139" r="4" fill="#3e503d"/>').join('')+'</g>';
-if(shape==='bearing')content='<ellipse cx="130" cy="210" rx="81" ry="11" fill="#25362a" opacity=".1"/><g transform="translate(130 127) rotate(-25) scale(1 .9)"><circle r="87" fill="'+metal+'" stroke="#71816b" stroke-width="3"/><circle r="66" fill="#344837"/><circle r="47" fill="'+metal+'"/><circle r="29" fill="#e9ece2"/>'+Array.from({length:9},(_,i)=>'<circle cx="'+(56*Math.cos(i*Math.PI*2/9))+'" cy="'+(56*Math.sin(i*Math.PI*2/9))+'" r="8" fill="'+metal+'"/>').join('')+'</g>';
-return '<svg viewBox="0 0 260 250" role="img" aria-label="'+shape+' illustration">'+defs+content+'</svg>';
-}
-function renderProducts(){
-const term=document.querySelector('#search').value.trim().toLocaleLowerCase(lang);
-const list=parts.filter(p=>(filter==='all'||p.type===filter)&&[p.en,p.tr,p.descEn,p.descTr].join(' ').toLocaleLowerCase(lang).includes(term));
-document.querySelector('#products').innerHTML=list.length?list.map((p,i)=>'<article class="product"><div class="product-image"><span class="product-tag">'+t(p.type)+'</span>'+illustration(p.shape)+'</div><p class="product-code">WLF / '+String(parts.indexOf(p)+1).padStart(2,'0')+'</p><h3>'+p[lang]+'</h3><p class="product-description">'+p[lang==='tr'?'descTr':'descEn']+'</p><button class="product-button" data-add="'+p.id+'"><span>'+t(selected.has(p.id)?'added':'add')+'</span><span>'+(selected.has(p.id)?'✓':'+')+'</span></button></article>').join(''):'<p class="empty">'+t('empty')+'</p>';
-}
-function renderSelected(){
-document.querySelector('#quote-items').innerHTML=selected.size?[...selected].map(id=>{const p=parts.find(x=>x.id===id);return '<div class="quote-item"><span>'+p[lang]+'</span><button type="button" data-remove="'+id+'" aria-label="'+t('remove')+': '+p[lang]+'">×</button></div>';}).join(''):'<p class="privacy">'+t('noItems')+'</p>';
-const count=document.querySelector('.quote-count');count.textContent=selected.size;count.hidden=!selected.size;
-}
-function setLanguage(){
-document.documentElement.lang=lang;
-document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=t(el.dataset.i18n));
-document.querySelectorAll('[data-i18n-html]').forEach(el=>el.innerHTML=t(el.dataset.i18nHtml));
-document.querySelectorAll('[data-placeholder]').forEach(el=>el.placeholder=t(el.dataset.placeholder));
-const toggle=document.querySelector('#language');toggle.innerHTML=lang.toUpperCase()+' <span>⌄</span>';toggle.setAttribute('aria-label',lang==='en'?'Türkçeye geç':'Switch to English');
-document.querySelector('#search').setAttribute('aria-label',t('search'));
-document.querySelector('#close-quote').setAttribute('aria-label',lang==='en'?'Close':'Kapat');
-document.querySelector('#form-status').textContent='';renderProducts();renderSelected();
-}
-document.querySelector('#language').addEventListener('click',()=>{lang=lang==='en'?'tr':'en';setLanguage();});
-document.querySelectorAll('[data-filter]').forEach(button=>button.addEventListener('click',()=>{filter=button.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>{b.classList.toggle('active',b===button);b.setAttribute('aria-pressed',String(b===button));});renderProducts();}));
-document.querySelector('#search').addEventListener('input',renderProducts);
-document.querySelector('#products').addEventListener('click',e=>{const button=e.target.closest('[data-add]');if(!button)return;selected.add(button.dataset.add);renderProducts();renderSelected();});
-document.querySelector('#quote-items').addEventListener('click',e=>{const button=e.target.closest('[data-remove]');if(!button)return;selected.delete(button.dataset.remove);renderSelected();renderProducts();});
-const dialog=document.querySelector('#quote-dialog');
-['open-quote','custom-request','export-request','cta-request'].forEach(id=>document.getElementById(id).addEventListener('click',()=>{renderSelected();document.querySelector('#form-status').textContent='';dialog.showModal();}));
-document.querySelector('#close-quote').addEventListener('click',()=>dialog.close());
-dialog.addEventListener('click',e=>{if(e.target===dialog){const r=dialog.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)dialog.close();}});
-function enquiryText(){const data=new FormData(document.querySelector('#quote-form'));return ['WLF AGRIPARTS — QUOTATION ENQUIRY','', 'Company: '+data.get('company'),'Contact: '+data.get('contact'),'Email: '+data.get('email'),'Destination: '+data.get('country'),'', 'Categories: '+([...selected].map(id=>parts.find(p=>p.id===id).en).join(', ')||'Custom enquiry'),'', 'Requirements:',data.get('details')].join('\n');}
-document.querySelector('#quote-form').addEventListener('submit',e=>{e.preventDefault();const body=enquiryText();if(e.submitter?.id==='email-request'){window.location.href='mailto:sales@wlfagriparts.com?subject='+encodeURIComponent('Spare parts quotation enquiry')+'&body='+encodeURIComponent(body);document.querySelector('#form-status').textContent=t('statusEmail');}else{const url=URL.createObjectURL(new Blob([body],{type:'text/plain;charset=utf-8'}));const a=document.createElement('a');a.href=url;a.download='WLF-quotation-enquiry.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);document.querySelector('#form-status').textContent=t('statusDownload');}});
-document.querySelector('#year').textContent=new Date().getFullYear();
-document.querySelectorAll('[data-filter]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter==='all')));
-setLanguage();
+'use strict';
+
+(() => {
+  const products = window.WLF_PRODUCTS || [];
+  const $ = (selector, root = document) => root.querySelector(selector);
+  const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
+  const escape = value => String(value).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const read = (key, fallback) => { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } };
+  const save = (key, value) => { try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch { return false; } };
+  const params = new URLSearchParams(location.search);
+  const page = document.body.dataset.page;
+  let language = ['en','tr'].includes(params.get('lang')) ? params.get('lang') : read('wlf-language', 'en');
+  if (!['en','tr'].includes(language)) language = 'en';
+  save('wlf-language', language);
+  const cleanQuote = value => Array.isArray(value) ? value.filter((item, index, all) => item && products.some(p => p.id === item.id) && Number.isInteger(item.quantity) && item.quantity > 0 && item.quantity <= 1000000 && all.findIndex(i => i?.id === item.id) === index) : [];
+  let quote = cleanQuote(read('wlf-enquiry-v2', []));
+  const L = (en, tr) => language === 'tr' ? tr : en;
+  const name = product => product.name[language];
+  const normal = value => String(value).toLowerCase().replace(/ı/g, 'i').normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  const compact = value => normal(value).replace(/[^a-z0-9]/g, '');
+  const labels = {
+    category: {tractor:['Tractor parts','Traktör Parçaları'],harvester:['Harvester parts','Biçerdöver Parçaları'],tillage:['Soil working parts','Toprak İşleme Parçaları']},
+    group: {hydraulic:['Hydraulics','Hidrolik Sistem'],transmission:['Transmission & drive','Şanzıman ve Aktarma'],engine:['Engine & fuel','Motor ve Yakıt'],axle:['Axle & bearings','Aks ve Rulmanlar'],cutting:['Cutting & harvesting','Kesim ve Hasat'],soil:['Soil working','Toprak İşleme']},
+    sourcing: {enquiry:['Confirm availability','Stok Teyidi İste'], 'made-to-order':['Special sourcing enquiry','Özel Tedarik Talebi']}
+  };
+  const label = (group, value) => group === 'brand' ? value : L(...labels[group][value]);
+  const filterConfig = [
+    {name:'category',title:['Category','Kategori'],options:Object.keys(labels.category)},
+    {name:'brand',title:['Machine brand reference','Makine Markası Referansı'],options:['John Deere','New Holland','Case IH','Massey Ferguson','Fendt']},
+    {name:'group',title:['Component group','Aksam Grubu'],options:Object.keys(labels.group)},
+    {name:'sourcing',title:['Sourcing enquiry','Tedarik Talebi'],options:Object.keys(labels.sourcing)}
+  ];
+  let search = params.get('q')?.slice(0, 120) || '';
+  let sort = ['featured','name','code'].includes(params.get('sort')) ? params.get('sort') : 'featured';
+  const filters = Object.fromEntries(filterConfig.map(group => [group.name, new Set(params.getAll(group.name).filter(v => group.options.includes(v)))]));
+  let openProduct = null;
+  let detailTrigger = null;
+  let toastTimer;
+
+  function translateStatic() {
+    document.documentElement.lang = language;
+    $$('[data-en][data-tr]').forEach(el => { el.textContent = el.dataset[language]; });
+    $$('[data-placeholder-en]').forEach(el => { el.placeholder = language === 'tr' ? el.dataset.placeholderTr : el.dataset.placeholderEn; });
+    $$('[data-alt-en]').forEach(el => { el.alt = language === 'tr' ? el.dataset.altTr : el.dataset.altEn; });
+    const titles = {home:['Agricultural Machinery Parts','Tarım Makineleri Yedek Parçaları'],products:['Parts Catalogue','Yedek Parça Kataloğu'],about:['About Us','Hakkımızda'],quote:['Request a Quote','Teklif İste'],contact:['Contact','İletişim']};
+    document.title = L(...titles[page]) + ' | WLF Agri Parts';
+    const languageButton = $('#language-switch');
+    languageButton.innerHTML = language.toUpperCase() + ' <span aria-hidden="true">⌄</span>';
+    languageButton.setAttribute('aria-label', L('Türkçeye geç', 'Switch to English'));
+    $('.main-nav').setAttribute('aria-label', L('Main navigation','Ana menü'));
+    $('.mobile-menu-toggle').setAttribute('aria-label', L('Toggle menu','Menüyü aç veya kapat'));
+    $('[data-close-dialog]')?.setAttribute('aria-label', L('Close product details','Ürün detayını kapat'));
+    $('#year').textContent = new Date().getFullYear();
+    if ($('#form-status')) $('#form-status').textContent = '';
+    renderBadge();
+  }
+
+  function renderBadge() {
+    $$('.quote-badge').forEach(el => { el.textContent = quote.length; el.hidden = quote.length === 0; });
+    $$('[data-add]').forEach(el => {
+      const product = products.find(p => p.id === el.dataset.add);
+      const selected = quote.some(item => item.id === el.dataset.add);
+      el.classList.toggle('is-added', selected);
+      el.setAttribute('aria-label', (selected ? L('In your enquiry: ','Teklif listenizde: ') : L('Add to enquiry: ','Teklif listesine ekle: ')) + name(product));
+      el.setAttribute('aria-pressed', String(selected));
+      el.innerHTML = '<span>' + (selected ? L('In your enquiry','Teklif Listenizde') : L('Add to enquiry','Teklif Listesine Ekle')) + '</span><span aria-hidden="true">' + (selected ? '✓' : '+') + '</span>';
+    });
+  }
+
+  function showToast(message) {
+    const toast = $('#toast');
+    toast.innerHTML = '<span>'+escape(message)+'</span> <a href="quote.html">'+L('View enquiry','Talebi Gör')+' →</a>';
+    toast.classList.add('is-visible');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove('is-visible'), 5500);
+  }
+
+  function addProduct(id) {
+    const product = products.find(p => p.id === id);
+    if (!product) return;
+    if (quote.some(item => item.id === id)) {
+      showToast(L('This part is already in your enquiry.','Bu parça zaten teklif listenizde.'));
+      return;
+    }
+    quote.push({id,quantity:1});
+    const stored = save('wlf-enquiry-v2', quote);
+    renderBadge();
+    showToast(stored ? L(name(product)+' added to your enquiry.',name(product)+' teklif listenize eklendi.') : L('Added for this page. Browser storage is unavailable.','Bu sayfa için eklendi. Tarayıcı depolama alanına erişilemiyor.'));
+  }
+
+  function card(product) {
+    return `<article class="product-card">
+      <div class="product-visual"><a href="products.html?part=${product.id}" data-detail="${product.id}" aria-label="${escape(L('View ','İncele: ')+name(product))}"><img src="${product.image}" alt="${escape(name(product))}" width="320" height="240" loading="lazy"></a><span class="product-category">${escape(label('category',product.category))}</span></div>
+      <div class="product-body"><div class="product-reference"><span>${product.code}</span><small>OEM ${product.oem}</small></div><h3><a href="products.html?part=${product.id}" data-detail="${product.id}">${escape(name(product))}</a></h3><div class="product-models">${product.brands.map(brand=>`<span>${escape(brand)}</span>`).join('')}</div><div class="product-bottom"><span class="source-label ${product.sourcing==='made-to-order'?'special':''}"><i aria-hidden="true"></i>${escape(label('sourcing',product.sourcing))}</span></div><div class="product-actions"><a class="text-link" href="products.html?part=${product.id}" data-detail="${product.id}">${L('View details','Detayları İncele')} <span aria-hidden="true">→</span></a><button type="button" class="button button-card" data-add="${product.id}"></button></div></div></article>`;
+  }
+
+  function renderFeatured() {
+    const container = $('#featured-products');
+    if (!container) return;
+    const featured = ['hydraulic-gear-pump','dry-clutch-disc','harvester-knife-section','front-axle-bearing'];
+    container.innerHTML = featured.map(id=>products.find(p=>p.id===id)).filter(Boolean).map(p=>card(p)).join('');
+    renderBadge();
+  }
+
+  function renderFilters() {
+    const container = $('#filter-groups');
+    if (!container) return;
+    container.innerHTML = filterConfig.map(group => `<fieldset class="filter-group"><legend>${L(...group.title)}</legend>${group.options.map(value => {
+      const count = products.filter(p=>group.name==='brand' ? p.brands.includes(value) : p[group.name]===value).length;
+      return `<label class="filter-option"><input type="checkbox" name="${group.name}" value="${escape(value)}" ${filters[group.name].has(value)?'checked':''}><span>${escape(label(group.name,value))}</span><small>${count}</small></label>`;
+    }).join('')}</fieldset>`).join('');
+  }
+
+  function matchesQuery(product) {
+    if (!search.trim()) return true;
+    const fields = [product.code,product.oem,product.name.en,product.name.tr,product.description.en,product.description.tr,...product.brands,...product.models];
+    if ([product.code,product.oem].some(value=>compact(value).includes(compact(search)) && compact(search).length>0)) return true;
+    const text = normal(fields.join(' '));
+    return normal(search).trim().split(/\s+/).every(token=>text.includes(token));
+  }
+
+  function filteredProducts() {
+    let result = products.filter(product=>matchesQuery(product) && filterConfig.every(group=>filters[group.name].size===0 || (group.name==='brand' ? product.brands.some(brand=>filters.brand.has(brand)) : filters[group.name].has(product[group.name]))));
+    if (sort==='name') result.sort((a,b)=>name(a).localeCompare(name(b),language));
+    if (sort==='code') result.sort((a,b)=>a.code.localeCompare(b.code));
+    return result;
+  }
+
+  function syncURL() {
+    const query = new URLSearchParams();
+    if (search) query.set('q',search);
+    filterConfig.forEach(group=>filters[group.name].forEach(value=>query.append(group.name,value)));
+    if (sort!=='featured') query.set('sort',sort);
+    if (openProduct) query.set('part',openProduct.id);
+    const tail=query.toString();
+    history.replaceState(null,'',location.pathname+(tail?'?'+tail:'')+location.hash);
+  }
+
+  function renderCatalogue(updateURL = true) {
+    if (!$('#catalog-grid')) return;
+    const result = filteredProducts();
+    $('#result-title').textContent = language==='tr' ? `${result.length} parça bulundu` : `${result.length} ${result.length===1?'part':'parts'} found`;
+    $('#catalog-grid').innerHTML = result.map(p=>card(p)).join('');
+    $('#catalog-grid').hidden = result.length===0;
+    $('#empty-state').hidden = result.length!==0;
+    const chips=[];
+    if (search) chips.push(`<button class="filter-chip" type="button" data-clear-search>${escape(search)} <span aria-hidden="true">×</span><span class="sr-only">${L('Remove search','Aramayı kaldır')}</span></button>`);
+    filterConfig.forEach(group=>filters[group.name].forEach(value=>chips.push(`<button class="filter-chip" type="button" data-remove-filter="${group.name}" data-value="${escape(value)}">${escape(label(group.name,value))} <span aria-hidden="true">×</span><span class="sr-only">${L('Remove filter','Filtreyi kaldır')}</span></button>`)));
+    $('#active-filters').innerHTML=chips.join('');
+    $('#catalog-sort').value = sort;
+    renderBadge();
+    if (updateURL) syncURL();
+  }
+
+  function resetCatalogue() {
+    search='';
+    filterConfig.forEach(group=>filters[group.name].clear());
+    $('#catalog-search').value='';
+    renderFilters();renderCatalogue();
+  }
+
+  function detailMarkup(product) {
+    return `<div class="detail-layout"><div class="detail-image"><img src="${product.image}" alt="${escape(name(product))}" width="440" height="420"></div><div class="detail-copy"><div class="product-reference"><span>${product.code}</span><small>OEM ${product.oem}</small></div><h2 id="detail-title">${escape(name(product))}</h2><div class="product-models">${product.brands.map(b=>`<span>${escape(b)}</span>`).join('')}</div><p>${escape(product.description[language])}</p><table class="spec-table"><caption class="sr-only">${L('Illustrative specifications','Örnek teknik bilgiler')}</caption><tbody>${product.specs.map(spec=>`<tr><th scope="row">${escape(spec.label[language])}</th><td>${escape(spec.value[language])}</td></tr>`).join('')}</tbody></table><div class="detail-models"><h3>${L('Example model references','Örnek Model Referansları')}</h3>${product.models.map(m=>`<span>${escape(m)}</span>`).join('')}</div><div class="detail-actions"><button type="button" class="button" data-add="${product.id}"></button><a href="quote.html" class="text-link">${L('View enquiry','Talebi Gör')} →</a></div></div></div><p class="detail-disclaimer">${L('SAMPLE PRODUCT · References, specifications, images and model associations are illustrative. They are not a guarantee of stock, origin or fit. Confirm the exact reference and compatibility before ordering.','ÖRNEK ÜRÜN · Referanslar, teknik bilgiler, görseller ve model eşleşmeleri temsildir. Stok, menşe veya uyumluluk garantisi değildir. Sipariş öncesi kesin referansı ve uyumluluğu teyit edin.')}</p>`;
+  }
+
+  function showDetail(id, trigger) {
+    const product = products.find(p=>p.id===id);
+    const dialog = $('#product-dialog');
+    if (!product || !dialog) return;
+    openProduct=product;
+    detailTrigger=trigger || null;
+    $('#product-detail').innerHTML=detailMarkup(product);
+    renderBadge();
+    if (!dialog.open) dialog.showModal();
+    document.body.classList.add('dialog-open');
+    if (page==='products') syncURL();
+  }
+
+  function renderQuote() {
+    const container = $('#quote-items');
+    if (!container) return;
+    if (quote.length===0) {
+      container.innerHTML=`<div class="quote-empty"><span aria-hidden="true">+</span><h3>${L('Your next parts list starts here.','Yeni parça listeniz burada başlıyor.')}</h3><p>${L('Add parts from the catalogue, or describe a custom requirement below.','Katalogdan parçalar ekleyin veya aşağıda özel ihtiyacınızı açıklayın.')}</p><a class="text-link" href="products.html">${L('Explore the catalogue','Kataloğu Keşfet')} →</a></div>`;
+      return;
+    }
+    container.innerHTML=quote.map(item=>{
+      const product=products.find(p=>p.id===item.id);
+      return `<div class="quote-row"><img src="${product.image}" width="80" height="80" alt=""><div class="quote-row-info"><span>${product.code}</span><a href="products.html?part=${product.id}">${escape(name(product))}</a><small>OEM ${product.oem}</small></div><label class="quantity-field"><span>${L('Quantity','Miktar')}</span><input type="number" min="1" max="1000000" step="1" required value="${item.quantity}" data-quantity="${product.id}" aria-label="${escape(L('Quantity for ','Miktar: ')+name(product))}"></label><button type="button" class="remove-item" data-remove="${product.id}" aria-label="${escape(L('Remove ','Listeden çıkar: ')+name(product))}">×</button></div>`;
+    }).join('');
+  }
+
+  function buildEnquiry() {
+    const form=new FormData($('#quote-form'));
+    const lines=['WLF AGRI PARTS — QUOTATION ENQUIRY','',`Company: ${form.get('company')}`,`Contact: ${form.get('contact')}`,`Email: ${form.get('email')}`,`Phone: ${form.get('phone')||'—'}`,`Destination country: ${form.get('country')}`,`Machine model: ${form.get('machine')||'—'}`,'','PARTS LIST'];
+    if (!quote.length) lines.push('Custom enquiry — see requirements below.');
+    quote.forEach((item,index)=>{const p=products.find(p=>p.id===item.id);lines.push(`${index+1}. ${p.code} | ${p.name.en} | OEM reference: ${p.oem} | Quantity: ${item.quantity}`);});
+    lines.push('','REQUIREMENTS',form.get('details'),'','Catalogue references are illustrative. Please confirm exact fit, availability and commercial terms.');
+    return lines.join('\n');
+  }
+
+  function downloadEnquiry(body) {
+    const url=URL.createObjectURL(new Blob([body],{type:'text/plain;charset=utf-8'}));
+    const link=document.createElement('a');link.href=url;link.download='WLF-Agri-Parts-enquiry.txt';
+    document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(url),1000);
+    $('#form-status').textContent=L('Your enquiry file is ready. Attach it to an email to sales@wlfagriparts.com. The file has not been sent automatically.','Talep dosyanız hazır. sales@wlfagriparts.com adresine göndereceğiniz e-postaya ekleyin. Dosya otomatik olarak gönderilmedi.');
+  }
+
+  $('#language-switch').addEventListener('click',()=>{
+    language=language==='en'?'tr':'en';save('wlf-language',language);
+    const url = new URL(location.href);url.searchParams.delete('lang');history.replaceState(null,'',url.pathname+url.search+url.hash);
+    translateStatic();
+    renderFeatured();renderFilters();renderCatalogue(false);renderQuote();
+    if (openProduct) { $('#product-detail').innerHTML=detailMarkup(openProduct);renderBadge(); }
+    $('#toast').classList.remove('is-visible');
+  });
+  $('.mobile-menu-toggle').addEventListener('click',()=>{
+    const toggle=$('.mobile-menu-toggle');const open=toggle.getAttribute('aria-expanded')!=='true';
+    toggle.setAttribute('aria-expanded',String(open));$('.main-nav').classList.toggle('is-open',open);
+  });
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'){$('.mobile-menu-toggle').setAttribute('aria-expanded','false');$('.main-nav').classList.remove('is-open');}});
+  document.addEventListener('click',event=>{
+    const add=event.target.closest('[data-add]');
+    if(add){addProduct(add.dataset.add);return;}
+    const detail=event.target.closest('[data-detail]');
+    if(detail && $('#product-dialog') && !event.ctrlKey && !event.metaKey && !event.shiftKey && !event.altKey){event.preventDefault();showDetail(detail.dataset.detail,detail);return;}
+    const remove=event.target.closest('[data-remove]');
+    if(remove){const index=quote.findIndex(i=>i.id===remove.dataset.remove);quote=quote.filter(i=>i.id!==remove.dataset.remove);save('wlf-enquiry-v2',quote);renderQuote();renderBadge();const remaining=$$('[data-remove]');(remaining[Math.min(index,remaining.length-1)]||$('.quote-selection a')).focus();return;}
+    const removeFilter=event.target.closest('[data-remove-filter]');
+    if(removeFilter){filters[removeFilter.dataset.removeFilter].delete(removeFilter.dataset.value);renderFilters();renderCatalogue();$('#result-title').setAttribute('tabindex','-1');$('#result-title').focus();return;}
+    if(event.target.closest('[data-clear-search]')){search='';$('#catalog-search').value='';renderCatalogue();$('#catalog-search').focus();}
+  });
+
+  $('#catalog-search-form')?.addEventListener('submit',event=>{event.preventDefault();search=$('#catalog-search').value.trim();renderCatalogue();});
+  $('#catalog-search')?.addEventListener('input',event=>{search=event.target.value;renderCatalogue();});
+  $('#catalog-sort')?.addEventListener('change',event=>{sort=event.target.value;renderCatalogue();});
+  $('#filter-form')?.addEventListener('submit',event=>event.preventDefault());
+  $('#filter-form')?.addEventListener('change',event=>{
+    const input=event.target;if(!filters[input.name])return;
+    input.checked?filters[input.name].add(input.value):filters[input.name].delete(input.value);renderCatalogue();
+  });
+  $('#clear-filters')?.addEventListener('click',resetCatalogue);
+  $('#reset-search')?.addEventListener('click',resetCatalogue);
+  const dialog=$('#product-dialog');
+  $('[data-close-dialog]')?.addEventListener('click',()=>dialog.close());
+  dialog?.addEventListener('click',event=>{if(event.target===dialog){const r=dialog.getBoundingClientRect();if(event.clientX<r.left||event.clientX>r.right||event.clientY<r.top||event.clientY>r.bottom)dialog.close();}});
+  dialog?.addEventListener('close',()=>{openProduct=null;document.body.classList.remove('dialog-open');if(page==='products')syncURL();if(detailTrigger?.isConnected)detailTrigger.focus();});
+  $('#quote-items')?.addEventListener('change',event=>{
+    const input=event.target;if(!input.dataset.quantity)return;
+    if(!input.checkValidity()){input.reportValidity();return;}
+    const item=quote.find(i=>i.id===input.dataset.quantity);if(item){item.quantity=Number(input.value);save('wlf-enquiry-v2',quote);}
+  });
+  $('#quote-form')?.addEventListener('submit',event=>{
+    event.preventDefault();
+    for(const input of $$('[data-quantity]')){if(!input.reportValidity())return;const item=quote.find(i=>i.id===input.dataset.quantity);item.quantity=Number(input.value);}
+    for(const input of $$('#quote-form [required]')){if(!input.value.trim()){input.setCustomValidity(L('Please enter this information.','Lütfen bu bilgiyi girin.'));input.reportValidity();input.addEventListener('input',()=>input.setCustomValidity(''),{once:true});return;}}
+    save('wlf-enquiry-v2',quote);
+    const body=buildEnquiry();
+    if(event.submitter?.id==='download-request'){downloadEnquiry(body);return;}
+    const url='mailto:sales@wlfagriparts.com?subject='+encodeURIComponent('Agricultural parts quotation — '+new FormData($('#quote-form')).get('company'))+'&body='+encodeURIComponent(body);
+    if(url.length>1800){downloadEnquiry(body);$('#form-status').textContent=L('This enquiry is too long for a reliable email link, so it was downloaded instead. Attach the file to an email to sales@wlfagriparts.com.','Bu talep e-posta bağlantısı için uzun olduğundan dosya olarak indirildi. Dosyayı sales@wlfagriparts.com adresine göndereceğiniz e-postaya ekleyin.');return;}
+    $('#form-status').textContent=L('An email draft is being opened. Review and send it in your email app. If it does not open, download your enquiry and email it to sales@wlfagriparts.com.','E-posta taslağı açılıyor. Posta uygulamanızda inceleyip gönderin. Açılmazsa talebinizi indirip sales@wlfagriparts.com adresine gönderin.');
+    const link=document.createElement('a');link.href=url;link.target='_blank';link.rel='noopener';document.body.append(link);link.click();link.remove();
+  });
+
+  translateStatic();renderFeatured();renderFilters();renderQuote();
+  if($('#catalog-search'))$('#catalog-search').value=search;
+  renderCatalogue(false);
+  if(params.get('part'))showDetail(params.get('part'));
+  const mq=matchMedia('(max-width: 767px)');
+  const setFilterPanel=()=>{const panel=$('.filters-panel');if(panel)panel.open=!mq.matches;};
+  setFilterPanel();mq.addEventListener('change',setFilterPanel);
+  window.addEventListener('storage',event=>{
+    if(event.key==='wlf-enquiry-v2'){
+      quote=cleanQuote(read('wlf-enquiry-v2', []));
+      renderQuote();renderBadge();
+    }
+  });
+})();

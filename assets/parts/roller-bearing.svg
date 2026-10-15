@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 400" fill="none" role="img" aria-labelledby="title">
+  <title id="title">Heavy duty agricultural roller bearing — catalogue illustration</title>
+  <defs>
+    <linearGradient id="steel" x1="127" y1="82" x2="352" y2="306" gradientUnits="userSpaceOnUse"><stop stop-color="#f2f4ed"/><stop offset=".16" stop-color="#8a978d"/><stop offset=".31" stop-color="#dce3d7"/><stop offset=".5" stop-color="#647868"/><stop offset=".73" stop-color="#c0cdba"/><stop offset="1" stop-color="#425c46"/></linearGradient>
+    <linearGradient id="side" x1="126" y1="149" x2="377" y2="295" gradientUnits="userSpaceOnUse"><stop stop-color="#748775"/><stop offset=".4" stop-color="#263e2d"/><stop offset=".7" stop-color="#80947b"/><stop offset="1" stop-color="#344e38"/></linearGradient>
+    <linearGradient id="roller" x1="-12" y1="0" x2="12" y2="0" gradientUnits="userSpaceOnUse"><stop stop-color="#3e5742"/><stop offset=".25" stop-color="#aabb9f"/><stop offset=".46" stop-color="#edf1e3"/><stop offset=".68" stop-color="#9aad91"/><stop offset="1" stop-color="#3b563e"/></linearGradient>
+    <filter id="shadow" x="-35%" y="-30%" width="170%" height="180%"><feDropShadow dx="3" dy="17" stdDeviation="13" flood-color="#263c2c" flood-opacity=".22"/></filter>
+    <g id="rollerpiece"><rect x="-11" y="-113" width="22" height="43" rx="7" fill="url(#roller)" stroke="#415b43" stroke-width="1.5"/><ellipse cx="0" cy="-109" rx="9" ry="4" fill="#d9e2cc" stroke="#8da180"/></g>
+  </defs>
+  <g filter="url(#shadow)" transform="rotate(-17 250 200)">
+    <path d="M387 179v38c0 73-61 132-137 132s-137-59-137-132v-38Z" fill="url(#side)" stroke="#344e39" stroke-width="3"/>
+    <ellipse cx="250" cy="179" rx="137" ry="132" fill="url(#steel)" stroke="#81947b" stroke-width="3"/>
+    <ellipse cx="250" cy="179" rx="118" ry="113" fill="#344c37" stroke="#e1e8d5" stroke-width="3"/>
+    <ellipse cx="250" cy="183" rx="103" ry="98" fill="#ac9450" stroke="#6e673c" stroke-width="2"/>
+    <g transform="translate(250 182) scale(1 .95)"><use href="#rollerpiece"/><use href="#rollerpiece" transform="rotate(30)"/><use href="#rollerpiece" transform="rotate(60)"/><use href="#rollerpiece" transform="rotate(90)"/><use href="#rollerpiece" transform="rotate(120)"/><use href="#rollerpiece" transform="rotate(150)"/><use href="#rollerpiece" transform="rotate(180)"/><use href="#rollerpiece" transform="rotate(210)"/><use href="#rollerpiece" transform="rotate(240)"/><use href="#rollerpiece" transform="rotate(270)"/><use href="#rollerpiece" transform="rotate(300)"/><use href="#rollerpiece" transform="rotate(330)"/></g>
+    <ellipse cx="250" cy="182" rx="77" ry="73" fill="url(#steel)" stroke="#e3e9d7" stroke-width="2.5"/>
+    <ellipse cx="250" cy="182" rx="55" ry="52" fill="#243e2c" stroke="#647f5e" stroke-width="3"/>
+    <path d="M195 182c0 29 25 52 55 52s55-23 55-52v22c0 29-25 52-55 52s-55-23-55-52Z" fill="url(#side)"/>
+    <ellipse cx="250" cy="182" rx="55" ry="52" stroke="#d6e1c9" stroke-width="2"/>
+    <path d="M124 182c0-67 56-121 126-121" stroke="#f4f5e9" stroke-opacity=".9" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M138 267c27 34 66 51 109 51 55 0 100-27 124-66" stroke="#aabb9c" stroke-width="2" stroke-opacity=".65"/>
+    <path d="m167 303 20 10m9 4 17 5" stroke="#c4cead" stroke-width="2" stroke-linecap="round"/>
+  </g>
+</svg>

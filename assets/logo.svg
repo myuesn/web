@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 296 96" role="img" aria-labelledby="brand-title">
+  <title id="brand-title">WLF Agri Parts</title>
+  <defs>
+    <clipPath id="emblem-crop"><circle cx="47" cy="46" r="30"/></clipPath>
+  </defs>
+  <g fill="#272d29">
+    <path d="M40 4h14l2 9 9 3 8-5 10 10-5 8 4 9 9 2v14l-9 2-4 9 5 8-10 10-8-5-9 4-2 9H40l-2-9-9-4-8 5-10-10 5-8-4-9-9-2V40l9-2 4-9-5-8 10-10 8 5 9-3z"/>
+    <circle cx="47" cy="47" r="34" fill="#fff"/>
+  </g>
+  <g clip-path="url(#emblem-crop)">
+    <path d="M12 59C35 42 63 46 85 58v31H12z" fill="#2b7944"/>
+    <path d="M15 75C36 50 59 51 83 56" fill="none" stroke="#fff" stroke-width="3"/>
+    <path d="M28 84C44 60 65 56 87 60" fill="none" stroke="#fff" stroke-width="3"/>
+    <path d="M43 89C55 70 70 63 89 64" fill="none" stroke="#fff" stroke-width="3"/>
+    <path d="M18 50C28 36 44 24 67 17" fill="none" stroke="#e9a900" stroke-width="2.2"/>
+    <g fill="#edaa00">
+      <path d="M26 43c-9-2-10-10-5-15 6 3 8 9 5 15zM29 40c-1-10 5-15 12-14-1 7-5 12-12 14z"/>
+      <path d="M37 34c-9-3-9-11-4-15 6 4 7 10 4 15zM40 31c0-9 6-13 13-11-2 6-6 10-13 11z"/>
+      <path d="M49 26c-7-4-6-11 0-15 5 5 5 10 0 15zM52 24c1-9 8-12 14-8-3 6-7 9-14 8z"/>
+      <path d="M63 19c2-8 8-11 14-8-2 6-7 10-14 8z"/>
+    </g>
+  </g>
+  <g aria-hidden="true">
+    <path d="M97 21h14l6 31 15-31h12l6 31 15-31h14l-27 48h-14l-6-28-14 28h-14z" fill="#272d29"/>
+    <path d="M181 21h14l-8 36h28l-3 12h-42z" fill="#eba900"/>
+    <path d="M223 21h56l-10 11h-34l-2 9h33l-3 12h-33l-3 16h-14z" fill="#272d29"/>
+    <path d="M223 21h56l-10 11h-49z" fill="#eba900"/>
+    <text x="190" y="87" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="800" letter-spacing="3" fill="#272d29">AGRI PARTS</text>
+    <path d="M97 82h18M265 82h14" stroke="#eba900" stroke-width="2"/>
+  </g>
+</svg>
