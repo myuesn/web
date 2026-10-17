@@ -27,6 +27,12 @@ ZIP dosyalarını bilgisayarınızda açmadan yükleyin. Tema ZIP'i Eklentiler b
 
 Katalog, öne çıkan ürünler, arama, teklif formu ve iletişim bilgileri işlevsel kısa kod bloklarıdır: `[wlf_catalogue]`, `[wlf_featured]`, `[wlf_home_search]`, `[wlf_enquiry]`, `[wlf_contact_details]`. İşlevi korumak için kısa kodu değiştirmeyin. Her kısa kodu bir sayfada yalnızca bir kez kullanın; çevresindeki bölümleri düzenleyebilirsiniz.
 
+## İsteğe bağlı hazır SSS ve sipariş / ihracat sayfaları
+
+`downloads/wlf-hazir-sayfalar.zip` iki ek sayfa için ayrı bir kurulum eklentisidir. **Eklentiler → Yeni Ekle → Eklenti Yükle** üzerinden ZIP'i açmadan yükleyip etkinleştirin. **WLF Frequently Asked Questions** (8 soru) ve **WLF Order & Export Process** (6 adım) taslakları oluşturulur. İngilizce, İspanyolca ve Rusça metinler normal WordPress bloklarıyla hazırdır. Eklentiler ekranındaki bağlantılardan önizleyip **Yayımla** ile yayımlayabilirsiniz; ardından **Görünüm → Menüler** üzerinden menüye ekleyin.
+
+Mevcut sayfalar ve elle başlattığınız SSS taslağı korunur. Yeniden etkinleştirme sayfaları çoğaltmaz veya yaptığınız düzenlemeleri değiştirmez. Oluşturulan sayfalar eklentiyi kapatmak veya silmekle silinmez. Sayfalara özel boşluk ve yazı stilleri için eklentiyi etkin bırakın. Yeniden üretim: `python3 tools/package_additional_pages.py`.
+
 ## Telefon ve küçük hareketli WhatsApp düğmesi
 
 **Görünüm → Özelleştir → WLF — İletişim ve marka** bölümünde işletme telefonunuzu ve WhatsApp numaranızı ülke koduyla girin. **WhatsApp düğmesini göster** kutusunu açıp **Yayımla** düğmesine basın. İki numara farklı olabilir. Boş veya geçersiz numarada ilgili bağlantı gizlenir. Gerçek numara pakete yazılmamıştır; bu alanları siz doldurursunuz. Hareket azaltma tercihinde düğmenin animasyonu durur.

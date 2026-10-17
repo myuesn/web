@@ -1,0 +1,10 @@
+.wlf-ready-content { max-width: 960px; }
+.wlf-ready-content .faq-item { padding-block: 28px; border-bottom: 1px solid var(--line, #dedfd7); }
+.wlf-ready-content .faq-item:first-child { padding-top: 0; }
+.wlf-ready-content .faq-item h2 { font-size: clamp(21px, 2.1vw, 28px); line-height: 1.35; letter-spacing: -.5px; margin: 0 0 14px; }
+.wlf-ready-content .faq-item p { color: var(--muted, #5b665e); font-size: 15px; line-height: 1.9; margin: 0; overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+    .wlf-ready-content .faq-item { padding-block: 22px; }
+    .wlf-ready-content .faq-item h2 { font-size: 22px; }
+    .wlf-ready-content .faq-item p { font-size: 14px; }
+}
