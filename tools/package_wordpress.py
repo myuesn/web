@@ -18,7 +18,7 @@ data = json.loads(source[source.index('[', source.index('window.WLF_PRODUCTS')):
 (CORE / 'samples/products.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n')
 
 required = {
-    'wlf-agri-theme': ['style.css','functions.php','header.php','footer.php','index.php','page.php','theme.json','assets/style.css','assets/theme.css','assets/app.js','assets/editor.js','inc/starter.php','inc/customizer.php','inc/shortcodes.php','inc/partials/catalogue.php','inc/partials/enquiry.php'],
+    'wlf-agri-theme': ['style.css','functions.php','header.php','footer.php','index.php','page.php','theme.json','assets/style.css','assets/theme.css','assets/app.js','assets/editor.js','inc/starter.php','inc/customizer.php','inc/footer-navigation.php','inc/shortcodes.php','inc/partials/catalogue.php','inc/partials/enquiry.php'],
     'wlf-agri-core': ['wlf-agri-core.php','includes/products.php','includes/enquiries.php','assets/admin.js','samples/products.json'],
 }
 out = ROOT / 'downloads'

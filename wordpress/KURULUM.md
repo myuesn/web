@@ -13,6 +13,12 @@ Mevcut WordPress sitenizin dosya ve veritabanı yedeğini alın. `public_html` v
 
 ZIP dosyalarını bilgisayarınızda açmadan yükleyin. Tema ZIP'i Eklentiler bölümüne, eklenti ZIP'i Temalar bölümüne yüklenmez. WordPress sürümü ana alan adınızda çalışır; `/yeni/` önceki bağımsız HTML denemesidir ve WordPress panelinden yönetilmez.
 
+## Tema güncellemesi 1.0.1
+
+Güncel `wlf-agri-theme.zip` dosyasını **Görünüm → Temalar → Yeni Tema Ekle → Tema Yükle** bölümünden yükleyip **Mevcut temayı yüklenenle değiştir** seçeneğini kullanın. Bu bir tema güncellemesidir. Aynı tema klasörü korunduğu için WordPress sayfa içerikleri, ürünler, teklif kayıtları ve Özelleştir alanındaki numara/logo ayarları korunur. Özel olarak tema dosyalarını elle düzenlediyseniz önce bunların yedeğini alın; tema dosyaları güncellenir. Hosting/WordPress önbelleğini temizleyip sayfayı yenileyin.
+
+Bu sürümde WhatsApp simgesinin içindeki telefon küçültülüp ortalandı; mevcut nabız animasyonu ve hareket azaltma desteği korunur. Şeffaf footer logosunun arkasındaki beyaz CSS kutusu kaldırıldı. Atanmış alt menüdeki tanınan eski site içi sayfa bağlantıları ön yüzde mevcut WLF sayfalarının adreslerine çözülür; dış bağlantılar ve diğer özel bağlantılar korunur. Menü kayıtları veritabanında yeniden yazılmaz. Özel alt menü atanmamışsa, yayımlanmış SSS ve sipariş / ihracat sayfaları otomatik listelenir.
+
 ## Ürün ekleme, düzenleme ve kaldırma
 
 **WLF Ürünler → Yeni ürün ekle** bölümünü kullanın. Başlık ve ana açıklama İngilizcedir. WLF kodu, OEM, kategori, aksam, marka/model, İspanyolca/Rusça açıklamalar ve teknik özellikler için ayrı alanlar vardır. Ürün fotoğrafını **Öne çıkan görsel** bölümünden seçin. Teknik özelliklere yeni satır ekleyip istemediklerinizi kaldırabilirsiniz. Çeviri boşsa İngilizce gösterilir.

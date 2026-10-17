@@ -135,3 +135,4 @@ add_action('enqueue_block_editor_assets', 'wlf_editor_assets');
 require_once get_template_directory() . '/inc/customizer.php';
 require_once get_template_directory() . '/inc/shortcodes.php';
 require_once get_template_directory() . '/inc/starter.php';
+require_once get_template_directory() . '/inc/footer-navigation.php';

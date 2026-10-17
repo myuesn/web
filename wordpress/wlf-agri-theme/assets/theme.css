@@ -32,7 +32,7 @@
 .main-nav > ul, .main-nav ul { display: flex; align-items: center; gap: 24px; list-style: none; margin: 0; padding: 0; }
 .main-nav ul ul { display: none; position: absolute; background: white; padding: 15px; z-index: 20; }
 .main-nav li:hover > ul, .main-nav li:focus-within > ul { display: flex; flex-direction: column; align-items: flex-start; }
-.footer-brand .logo { background: white; padding: 10px; }
+.footer-brand .logo { background: transparent; border: 0; padding: 0; }
 .footer-links ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 9px; }
 .wlf-honeypot { position: absolute !important; left: -10000px !important; width: 1px !important; height: 1px !important; overflow: hidden !important; }
 body.admin-bar .header { top: 32px; }
